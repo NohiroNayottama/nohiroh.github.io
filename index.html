@@ -15,6 +15,11 @@
     body {
       font-family: 'Anastason', sans-serif;
     }
+    /* Efek gambar lebih besar dan geser ke kiri */
+    #landing img {
+      transform: scale(1.1) translateX(-10%);
+      object-position: right center; /* Posisi gambar di sebelah kanan */
+    }
   </style>
 </head>
 <body>
@@ -30,7 +35,7 @@
       </h1>
     </div>
     <!-- Bagian Kanan (Foto) -->
-    <div class="w-[80%]"> <!-- Lebar gambar 40% -->
+    <div class="w-[40%] overflow-hidden"> <!-- Lebar gambar 40% -->
       <img src="79f80e52-a77b-4dfb-8bd9-772dae59f96d.jpg" alt="Client Photo" class="w-full h-screen object-cover">
     </div>
   </section>
