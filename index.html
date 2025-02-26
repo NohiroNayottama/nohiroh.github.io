@@ -3,54 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Saya</title>
+  <title>Portofolio Modern</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
+  <!-- Header dengan Background Animasi -->
+  <header class="header">
     <div class="container">
-      <h1>Selamat Datang di Portofolio Saya</h1>
-      <p>Mahasiswa Rekayasa Keamanan Siber | Politeknik Negeri Batam</p>
-      <img src="profile.jpg" alt="Foto Profil" class="profile-img">
+      <h1 class="animate__animated animate__fadeInDown">Selamat Datang di Portofolio Saya</h1>
+      <p class="animate__animated animate__fadeInUp">Mahasiswa Rekayasa Keamanan Siber | Politeknik Negeri Batam</p>
+      <img src="profile.jpg" alt="Foto Profil" class="profile-img animate__animated animate__zoomIn">
       <div class="cta-buttons">
-        <a href="#bio" class="btn">Lihat Bio Saya</a>
-        <a href="#projects" class="btn">Jelajahi Projek Saya</a>
+        <a href="#bio" class="btn animate__animated animate__fadeInLeft">Lihat Bio Saya</a>
+        <a href="#projects" class="btn animate__animated animate__fadeInRight">Jelajahi Projek Saya</a>
       </div>
     </div>
   </header>
 
-  <!-- Bio -->
+  <!-- Bio Section -->
   <section id="bio" class="bio">
     <div class="container">
-      <h2>Tentang Saya</h2>
-      <p>
+      <h2 class="animate__animated animate__fadeIn">Tentang Saya</h2>
+      <p class="animate__animated animate__fadeIn">
         Saya adalah seorang mahasiswa Rekayasa Keamanan Siber di Politeknik Negeri Batam, saat ini sedang menempuh semester 4. Saya memiliki passion di bidang keamanan siber, khususnya dalam lingkungan Security Operation Center (SOC). Dengan skill set yang saya kuasai, saya siap berkontribusi dalam menjaga keamanan sistem dan data. Saya selalu berkomitmen untuk terus belajar dan berkembang di industri yang dinamis ini.
       </p>
       <div class="cta-buttons">
-        <a href="#body-of-work" class="btn">Lihat Body of Work</a>
-        <a href="mailto:email@example.com" class="btn">Hubungi Saya</a>
+        <a href="#body-of-work" class="btn animate__animated animate__fadeInLeft">Lihat Body of Work</a>
+        <a href="mailto:email@example.com" class="btn animate__animated animate__fadeInRight">Hubungi Saya</a>
       </div>
     </div>
   </section>
 
-  <!-- Body of Work -->
+  <!-- Body of Work Section -->
   <section id="body-of-work" class="body-of-work">
     <div class="container">
-      <h2>Body of Work</h2>
-      <p>Berikut adalah beberapa karya dan kontribusi saya di bidang keamanan siber.</p>
+      <h2 class="animate__animated animate__fadeIn">Body of Work</h2>
+      <p class="animate__animated animate__fadeIn">Berikut adalah beberapa karya dan kontribusi saya di bidang keamanan siber.</p>
       <div class="cards">
-        <div class="card">
+        <div class="card animate__animated animate__fadeInUp">
+          <i class="fas fa-shield-alt fa-3x"></i>
           <h3>Analisis Ancaman Siber</h3>
           <p>Studi kasus analisis ancaman siber pada lingkungan perusahaan.</p>
           <a href="#" class="btn">Lihat Selengkapnya</a>
         </div>
-        <div class="card">
+        <div class="card animate__animated animate__fadeInUp animate__delay-1s">
+          <i class="fas fa-network-wired fa-3x"></i>
           <h3>Implementasi SOC</h3>
           <p>Proyek simulasi implementasi Security Operation Center.</p>
           <a href="#" class="btn">Lihat Selengkapnya</a>
         </div>
-        <div class="card">
+        <div class="card animate__animated animate__fadeInUp animate__delay-2s">
+          <i class="fas fa-lock fa-3x"></i>
           <h3>Pelatihan Keamanan Jaringan</h3>
           <p>Materi pelatihan keamanan jaringan untuk tim internal.</p>
           <a href="#" class="btn">Lihat Selengkapnya</a>
@@ -59,23 +64,26 @@
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects Section -->
   <section id="projects" class="projects">
     <div class="container">
-      <h2>Projects</h2>
-      <p>Berikut adalah beberapa proyek yang telah saya selesaikan.</p>
+      <h2 class="animate__animated animate__fadeIn">Projects</h2>
+      <p class="animate__animated animate__fadeIn">Berikut adalah beberapa proyek yang telah saya selesaikan.</p>
       <div class="cards">
-        <div class="card">
+        <div class="card animate__animated animate__fadeInUp">
+          <i class="fas fa-bug fa-3x"></i>
           <h3>Sistem Deteksi Intrusi (IDS)</h3>
           <p>Membangun sistem deteksi intrusi menggunakan tools open-source.</p>
           <a href="#" class="btn">Lihat Selengkapnya</a>
         </div>
-        <div class="card">
+        <div class="card animate__animated animate__fadeInUp animate__delay-1s">
+          <i class="fas fa-user-secret fa-3x"></i>
           <h3>Penetration Testing</h3>
           <p>Melakukan penetration testing pada lingkungan simulasi.</p>
           <a href="#" class="btn">Lihat Selengkapnya</a>
         </div>
-        <div class="card">
+        <div class="card animate__animated animate__fadeInUp animate__delay-2s">
+          <i class="fas fa-code fa-3x"></i>
           <h3>Keamanan Aplikasi Web</h3>
           <p>Mengidentifikasi dan memperbaiki kerentanan keamanan aplikasi web.</p>
           <a href="#" class="btn">Lihat Selengkapnya</a>
@@ -87,12 +95,16 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <h3>Kontak Saya</h3>
-      <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">LinkedIn Profile</a></p>
-      <p>GitHub: <a href="https://github.com/yourprofile">GitHub Profile</a></p>
-      <a href="#" class="btn">Kembali ke Atas</a>
+      <h3 class="animate__animated animate__fadeIn">Kontak Saya</h3>
+      <div class="social-links">
+        <a href="mailto:email@example.com" class="animate__animated animate__fadeInLeft"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/yourprofile" class="animate__animated animate__fadeInUp"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/yourprofile" class="animate__animated animate__fadeInRight"><i class="fab fa-github"></i></a>
+      </div>
+      <a href="#" class="btn animate__animated animate__fadeIn">Kembali ke Atas</a>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
