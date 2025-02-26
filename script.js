@@ -19,3 +19,25 @@ gsap.to("#landing img", {
     scrub: true,
   },
 });
+
+gsap.to("#bio img", {
+  opacity: 0,
+  x: -50,
+  scrollTrigger: {
+    trigger: "#bio",
+    start: "top center",
+    end: "bottom center",
+    scrub: true,
+  },
+});
+
+gsap.to("#bio p", {
+  opacity: 0,
+  x: 50,
+  scrollTrigger: {
+    trigger: "#bio",
+    start: "top center",
+    end: "bottom center",
+    scrub: true,
+  },
+});
