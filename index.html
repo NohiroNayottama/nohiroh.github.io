@@ -9,8 +9,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header dengan Background Animasi -->
-  <header class="header">
+  <!-- Dark Mode Toggle -->
+  <div class="dark-mode-toggle">
+    <input type="checkbox" id="darkModeToggle">
+    <label for="darkModeToggle" class="toggle-label">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </label>
+  </div>
+
+  <!-- Header dengan Parallax Effect -->
+  <header class="header parallax">
     <div class="container">
       <h1 class="animate__animated animate__fadeInDown">Selamat Datang di Portofolio Saya</h1>
       <p class="animate__animated animate__fadeInUp">Mahasiswa Rekayasa Keamanan Siber | Politeknik Negeri Batam</p>
@@ -37,7 +46,7 @@
   </section>
 
   <!-- Body of Work Section -->
-  <section id="body-of-work" class="body-of-work">
+  <section id="body-of-work" class="body-of-work parallax">
     <div class="container">
       <h2 class="animate__animated animate__fadeIn">Body of Work</h2>
       <p class="animate__animated animate__fadeIn">Berikut adalah beberapa karya dan kontribusi saya di bidang keamanan siber.</p>
@@ -65,7 +74,7 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects">
+  <section id="projects" class="projects parallax">
     <div class="container">
       <h2 class="animate__animated animate__fadeIn">Projects</h2>
       <p class="animate__animated animate__fadeIn">Berikut adalah beberapa proyek yang telah saya selesaikan.</p>
