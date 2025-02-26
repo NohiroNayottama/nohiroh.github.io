@@ -129,13 +129,13 @@
     // Animasi Bio: Fade In saat muncul
     gsap.from("#bio img, #bio h2, #bio p, #bio ul", {
       opacity: 0,
-      y: 70,
+      y: 50,
       duration: 1,
-      stagger: 0.2,
+      stagger: 0.3,
       scrollTrigger: {
         trigger: "#bio",
         start: "top 80%",
-        end: "top 80%",
+        end: "top 10%",
         scrub: true,
       },
     });
