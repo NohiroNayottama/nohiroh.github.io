@@ -129,9 +129,9 @@
     // Animasi Bio: Fade In saat muncul
     gsap.from("#bio img, #bio h2, #bio p, #bio ul", {
       opacity: 0,
-      y: 50,
-      duration: 1.5, /* Durasi lebih lama */
-      stagger: 0.3, /* Jarak antar animasi lebih panjang */
+      y: 20,
+      duration: 1, /* Durasi lebih lama */
+      stagger: 0.2, /* Jarak antar animasi lebih panjang */
       scrollTrigger: {
         trigger: "#bio",
         start: "top 90%", /* Mulai animasi saat 90% bagian Bio terlihat */
@@ -144,7 +144,7 @@
     gsap.to("#bio img, #bio h2, #bio p, #bio ul", {
       opacity: 0,
       y: -50,
-      duration: 1.5, /* Durasi lebih lama */
+      duration: 1, /* Durasi lebih lama */
       scrollTrigger: {
         trigger: "#body-of-work",
         start: "top 80%",
