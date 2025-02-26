@@ -17,11 +17,11 @@
     }
     /* Geser container gambar ke kiri dan perbesar gambar */
     #landing .photo-container {
-      margin-left: -5%; /* Geser ke kiri */
+      margin-left: -5%; /* Sesuaikan dengan permintaan */
       width: 50%; /* Lebar container diperbesar */
     }
     #landing img {
-      width: 140%; /* Gambar diperbesar */
+      width: 140%; /* Sesuaikan dengan permintaan */
       height: 100%;
       object-fit: cover;
       object-position: center right; /* Fokus ke bagian kanan gambar */
@@ -118,8 +118,8 @@
       x: -50,
       scrollTrigger: {
         trigger: "#bio",
-        start: "top center",
-        end: "bottom center",
+        start: "top 60%", /* Mulai animasi saat 60% bagian Bio terlihat */
+        end: "bottom 40%", /* Selesai animasi saat 40% bagian Bio terlihat */
         scrub: true,
       },
     });
@@ -129,8 +129,8 @@
       x: 50,
       scrollTrigger: {
         trigger: "#bio",
-        start: "top center",
-        end: "bottom center",
+        start: "top 60%", /* Mulai animasi saat 60% bagian Bio terlihat */
+        end: "bottom 40%", /* Selesai animasi saat 40% bagian Bio terlihat */
         scrub: true,
       },
     });
