@@ -1,18 +1,21 @@
-// Dark Mode Toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-const body = document.body;
-
-darkModeToggle.addEventListener('change', () => {
-  body.setAttribute('data-theme', darkModeToggle.checked ? 'dark' : 'light');
+gsap.to("#landing h1", {
+  opacity: 0,
+  y: -50,
+  scrollTrigger: {
+    trigger: "#landing",
+    start: "top top",
+    end: "bottom top",
+    scrub: true,
+  },
 });
 
-// Parallax Effect
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-  const parallaxElements = document.querySelectorAll('.parallax');
-
-  parallaxElements.forEach(element => {
-    const speed = element.getAttribute('data-speed') || 0.5;
-    element.style.transform = `translateY(${scrollY * speed}px)`;
-  });
+gsap.to("#landing img", {
+  opacity: 0,
+  y: -50,
+  scrollTrigger: {
+    trigger: "#landing",
+    start: "top top",
+    end: "bottom top",
+    scrub: true,
+  },
 });
