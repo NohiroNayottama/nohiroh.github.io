@@ -1,60 +1,9 @@
-/* CSS Variables untuk Dark Mode */
-:root {
-  --bg-color: #f4f4f4;
-  --text-color: #333;
-  --header-bg: linear-gradient(135deg, #2c3e50, #34495e);
-  --card-bg: #fff;
-  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --btn-bg: #3498db;
-  --btn-hover: #2980b9;
-}
-
-[data-theme="dark"] {
-  --bg-color: #1a1a1a;
-  --text-color: #f4f4f4;
-  --header-bg: linear-gradient(135deg, #1c1c1c, #2c2c2c);
-  --card-bg: #2c3e50;
-  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  --btn-bg: #2980b9;
-  --btn-hover: #3498db;
-}
-
-/* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  transition: background-color 0.5s ease, color 0.5s ease;
+  background-color: #1a1a1a;
 }
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0;
+@media (max-width: 768px) {
+  #body-of-work .flex {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-h1, h2, h3 {
-  color: var(--text-color);
-}
-
-a {
-  text-decoration: none;
-  color: var(--btn-bg);
-}
-
-a:hover {
-  color: var(--btn-hover);
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--btn-bg);
-  color: #fff;
-  border-radius: 5px;
-  margin: 10px 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
