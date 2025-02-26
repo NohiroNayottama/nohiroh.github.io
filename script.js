@@ -1,20 +1,18 @@
-// Animasi Scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.body;
+
+darkModeToggle.addEventListener('change', () => {
+  body.setAttribute('data-theme', darkModeToggle.checked ? 'dark' : 'light');
 });
 
-// Animasi Saat Scroll
+// Parallax Effect
 window.addEventListener('scroll', () => {
-  const sections = document.querySelectorAll('section');
-  sections.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
-    if (sectionTop < window.innerHeight - 100) {
-      section.classList.add('animate__fadeInUp');
-    }
+  const scrollY = window.scrollY;
+  const parallaxElements = document.querySelectorAll('.parallax');
+
+  parallaxElements.forEach(element => {
+    const speed = element.getAttribute('data-speed') || 0.5;
+    element.style.transform = `translateY(${scrollY * speed}px)`;
   });
 });
