@@ -112,14 +112,36 @@
       },
     });
 
-    // Animasi Bio
-    gsap.to("#bio img", {
+    // Animasi Bio: Fade In saat muncul, Fade Out saat scroll ke Body of Work
+    gsap.from("#bio img", {
       opacity: 0,
       x: -50,
       scrollTrigger: {
         trigger: "#bio",
-        start: "top 60%", /* Mulai animasi saat 60% bagian Bio terlihat */
-        end: "bottom 40%", /* Selesai animasi saat 40% bagian Bio terlihat */
+        start: "top 80%", /* Mulai animasi saat 80% bagian Bio terlihat */
+        end: "top 20%", /* Selesai animasi saat 20% bagian Bio terlihat */
+        scrub: true,
+      },
+    });
+
+    gsap.from("#bio p", {
+      opacity: 0,
+      x: 50,
+      scrollTrigger: {
+        trigger: "#bio",
+        start: "top 80%", /* Mulai animasi saat 80% bagian Bio terlihat */
+        end: "top 20%", /* Selesai animasi saat 20% bagian Bio terlihat */
+        scrub: true,
+      },
+    });
+
+    gsap.to("#bio img", {
+      opacity: 0,
+      x: -50,
+      scrollTrigger: {
+        trigger: "#body-of-work",
+        start: "top 80%", /* Mulai animasi saat 80% bagian Body of Work terlihat */
+        end: "top 20%", /* Selesai animasi saat 20% bagian Body of Work terlihat */
         scrub: true,
       },
     });
@@ -128,9 +150,9 @@
       opacity: 0,
       x: 50,
       scrollTrigger: {
-        trigger: "#bio",
-        start: "top 60%", /* Mulai animasi saat 60% bagian Bio terlihat */
-        end: "bottom 40%", /* Selesai animasi saat 40% bagian Bio terlihat */
+        trigger: "#body-of-work",
+        start: "top 80%", /* Mulai animasi saat 80% bagian Body of Work terlihat */
+        end: "top 20%", /* Selesai animasi saat 20% bagian Body of Work terlihat */
         scrub: true,
       },
     });
