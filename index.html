@@ -129,13 +129,13 @@
     // Animasi Bio: Fade In saat muncul
     gsap.from("#bio img, #bio h2, #bio p, #bio ul", {
       opacity: 0,
-      y: 20,
-      duration: 1, /* Durasi lebih lama */
-      stagger: 0.2, /* Jarak antar animasi lebih panjang */
+      y: 50,
+      duration: 1,
+      stagger: 0.2,
       scrollTrigger: {
         trigger: "#bio",
-        start: "top 90%", /* Mulai animasi saat 90% bagian Bio terlihat */
-        end: "top 30%", /* Selesai animasi saat 30% bagian Bio terlihat */
+        start: "top 80%",
+        end: "top 50%",
         scrub: true,
       },
     });
@@ -144,7 +144,7 @@
     gsap.to("#bio img, #bio h2, #bio p, #bio ul", {
       opacity: 0,
       y: -50,
-      duration: 1, /* Durasi lebih lama */
+      duration: 1,
       scrollTrigger: {
         trigger: "#body-of-work",
         start: "top 80%",
