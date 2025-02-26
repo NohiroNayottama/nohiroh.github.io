@@ -62,7 +62,7 @@
         With a strong passion for cybersecurity, I have developed critical skills essential for contributing to a Security Operation Center (SOC) environment.
       </p>
       <!-- Teks tambahan -->
-      <p class="text-[#060606] text-lg font-bold mb-2">What I Do Best</p> <!-- Teks "What I Do Best" dalam bold -->
+      <p class="text-[#060606] text-lg font-bold mb-2 uppercase">WHAT I DO BEST</p> <!-- Teks "WHAT I DO BEST" dalam huruf kapital -->
       <p class="text-[#060606] text-lg mb-4">
         I’m an intermediate Cybersecurity student, and my heart belongs in these areas:
       </p>
@@ -122,6 +122,33 @@
         trigger: "#landing",
         start: "top top",
         end: "bottom top",
+        scrub: true,
+      },
+    });
+
+    // Animasi Bio: Fade In saat muncul
+    gsap.from("#bio img, #bio h2, #bio p, #bio ul", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: "#bio",
+        start: "top 80%",
+        end: "top 50%",
+        scrub: true,
+      },
+    });
+
+    // Animasi Bio: Fade Out saat scroll ke Body of Work
+    gsap.to("#bio img, #bio h2, #bio p, #bio ul", {
+      opacity: 0,
+      y: -50,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#body-of-work",
+        start: "top 80%",
+        end: "top 50%",
         scrub: true,
       },
     });
