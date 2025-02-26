@@ -15,10 +15,16 @@
     body {
       font-family: 'Anastason', sans-serif;
     }
-    /* Efek gambar lebih besar dan geser ke kiri */
+    /* Geser container gambar ke kiri dan perbesar gambar */
+    #landing .photo-container {
+      margin-left: -10%; /* Geser ke kiri */
+      width: 50%; /* Lebar container diperbesar */
+    }
     #landing img {
-      transform: scale(1.1) translateX(-10%);
-      object-position: right center; /* Posisi gambar di sebelah kanan */
+      width: 120%; /* Gambar diperbesar */
+      height: 100%;
+      object-fit: cover;
+      object-position: center right; /* Fokus ke bagian kanan gambar */
     }
   </style>
 </head>
@@ -35,8 +41,8 @@
       </h1>
     </div>
     <!-- Bagian Kanan (Foto) -->
-    <div class="w-[40%] overflow-hidden"> <!-- Lebar gambar 40% -->
-      <img src="79f80e52-a77b-4dfb-8bd9-772dae59f96d.jpg" alt="Client Photo" class="w-full h-screen object-cover">
+    <div class="photo-container"> <!-- Container gambar -->
+      <img src="79f80e52-a77b-4dfb-8bd9-772dae59f96d.jpg" alt="Client Photo">
     </div>
   </section>
 
