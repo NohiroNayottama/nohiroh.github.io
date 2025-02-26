@@ -1,119 +1,47 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Modern</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Dark Mode Toggle -->
-  <div class="dark-mode-toggle">
-    <input type="checkbox" id="darkModeToggle">
-    <label for="darkModeToggle" class="toggle-label">
-      <i class="fas fa-moon"></i>
-      <i class="fas fa-sun"></i>
-    </label>
+<section id="landing" class="h-screen flex">
+  <!-- Bagian Kiri (Nama) -->
+  <div class="w-2/3 flex items-center justify-center">
+    <h1 class="text-white font-anastason text-6xl">
+      Nohiro Hirmeison<br>Cybersecurity Student
+    </h1>
   </div>
-
-  <!-- Header dengan Parallax Effect -->
-  <header class="header parallax">
-    <div class="container">
-      <h1 class="animate__animated animate__fadeInDown">Selamat Datang di Portofolio Saya</h1>
-      <p class="animate__animated animate__fadeInUp">Mahasiswa Rekayasa Keamanan Siber | Politeknik Negeri Batam</p>
-      <img src="profile.jpg" alt="Foto Profil" class="profile-img animate__animated animate__zoomIn">
-      <div class="cta-buttons">
-        <a href="#bio" class="btn animate__animated animate__fadeInLeft">Lihat Bio Saya</a>
-        <a href="#projects" class="btn animate__animated animate__fadeInRight">Jelajahi Projek Saya</a>
-      </div>
+  <!-- Bagian Kanan (Foto) -->
+  <div class="w-1/3">
+    <img src="client-photo.jpg" alt="Client Photo" class="w-full h-screen object-cover">
+  </div>
+</section>
+<section id="bio" class="h-screen flex">
+  <!-- Bagian Kiri (Foto) -->
+  <div class="w-1/3">
+    <img src="client-photo-2.jpg" alt="Client Photo" class="w-full h-screen object-cover">
+  </div>
+  <!-- Bagian Kanan (Bio) -->
+  <div class="w-2/3 flex items-center justify-center bg-[#fff6ea]">
+    <p class="text-[#060606] text-lg">
+      I am a dedicated student pursuing a degree in Cybersecurity Engineering at Politeknik Negeri Batam, currently in my 4th semester.<br><br>
+      With a strong passion for cybersecurity, I have developed critical skills essential for contributing to a Security Operation Center (SOC) environment.
+    </p>
+  </div>
+</section>
+<section id="body-of-work" class="min-h-screen py-20">
+  <h2 class="text-center text-white text-4xl mb-20">Body of Work</h2>
+  <!-- Tiga Kotak Hovering -->
+  <div class="flex justify-center gap-8">
+    <div class="hover:transform hover:scale-105 transition-transform">
+      <img src="work-1.jpg" alt="Work 1" class="w-64 h-64 object-cover">
+      <p class="text-white text-center mt-4">Project 1</p>
     </div>
-  </header>
-
-  <!-- Bio Section -->
-  <section id="bio" class="bio">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeIn">Tentang Saya</h2>
-      <p class="animate__animated animate__fadeIn">
-        Saya adalah seorang mahasiswa Rekayasa Keamanan Siber di Politeknik Negeri Batam, saat ini sedang menempuh semester 4. Saya memiliki passion di bidang keamanan siber, khususnya dalam lingkungan Security Operation Center (SOC). Dengan skill set yang saya kuasai, saya siap berkontribusi dalam menjaga keamanan sistem dan data. Saya selalu berkomitmen untuk terus belajar dan berkembang di industri yang dinamis ini.
-      </p>
-      <div class="cta-buttons">
-        <a href="#body-of-work" class="btn animate__animated animate__fadeInLeft">Lihat Body of Work</a>
-        <a href="mailto:email@example.com" class="btn animate__animated animate__fadeInRight">Hubungi Saya</a>
-      </div>
+    <div class="hover:transform hover:scale-105 transition-transform">
+      <img src="work-2.jpg" alt="Work 2" class="w-64 h-64 object-cover">
+      <p class="text-white text-center mt-4">Project 2</p>
     </div>
-  </section>
-
-  <!-- Body of Work Section -->
-  <section id="body-of-work" class="body-of-work parallax">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeIn">Body of Work</h2>
-      <p class="animate__animated animate__fadeIn">Berikut adalah beberapa karya dan kontribusi saya di bidang keamanan siber.</p>
-      <div class="cards">
-        <div class="card animate__animated animate__fadeInUp">
-          <i class="fas fa-shield-alt fa-3x"></i>
-          <h3>Analisis Ancaman Siber</h3>
-          <p>Studi kasus analisis ancaman siber pada lingkungan perusahaan.</p>
-          <a href="#" class="btn">Lihat Selengkapnya</a>
-        </div>
-        <div class="card animate__animated animate__fadeInUp animate__delay-1s">
-          <i class="fas fa-network-wired fa-3x"></i>
-          <h3>Implementasi SOC</h3>
-          <p>Proyek simulasi implementasi Security Operation Center.</p>
-          <a href="#" class="btn">Lihat Selengkapnya</a>
-        </div>
-        <div class="card animate__animated animate__fadeInUp animate__delay-2s">
-          <i class="fas fa-lock fa-3x"></i>
-          <h3>Pelatihan Keamanan Jaringan</h3>
-          <p>Materi pelatihan keamanan jaringan untuk tim internal.</p>
-          <a href="#" class="btn">Lihat Selengkapnya</a>
-        </div>
-      </div>
+    <div class="hover:transform hover:scale-105 transition-transform">
+      <img src="work-3.jpg" alt="Work 3" class="w-64 h-64 object-cover">
+      <p class="text-white text-center mt-4">Project 3</p>
     </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects parallax">
-    <div class="container">
-      <h2 class="animate__animated animate__fadeIn">Projects</h2>
-      <p class="animate__animated animate__fadeIn">Berikut adalah beberapa proyek yang telah saya selesaikan.</p>
-      <div class="cards">
-        <div class="card animate__animated animate__fadeInUp">
-          <i class="fas fa-bug fa-3x"></i>
-          <h3>Sistem Deteksi Intrusi (IDS)</h3>
-          <p>Membangun sistem deteksi intrusi menggunakan tools open-source.</p>
-          <a href="#" class="btn">Lihat Selengkapnya</a>
-        </div>
-        <div class="card animate__animated animate__fadeInUp animate__delay-1s">
-          <i class="fas fa-user-secret fa-3x"></i>
-          <h3>Penetration Testing</h3>
-          <p>Melakukan penetration testing pada lingkungan simulasi.</p>
-          <a href="#" class="btn">Lihat Selengkapnya</a>
-        </div>
-        <div class="card animate__animated animate__fadeInUp animate__delay-2s">
-          <i class="fas fa-code fa-3x"></i>
-          <h3>Keamanan Aplikasi Web</h3>
-          <p>Mengidentifikasi dan memperbaiki kerentanan keamanan aplikasi web.</p>
-          <a href="#" class="btn">Lihat Selengkapnya</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <h3 class="animate__animated animate__fadeIn">Kontak Saya</h3>
-      <div class="social-links">
-        <a href="mailto:email@example.com" class="animate__animated animate__fadeInLeft"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/yourprofile" class="animate__animated animate__fadeInUp"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/yourprofile" class="animate__animated animate__fadeInRight"><i class="fab fa-github"></i></a>
-      </div>
-      <a href="#" class="btn animate__animated animate__fadeIn">Kembali ke Atas</a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  </div>
+  <!-- Kotak Panjang -->
+  <div class="mt-20 mx-auto w-3/4 bg-[#333] p-4 text-center">
+    <p class="text-white font-light">Access this website -></p>
+  </div>
+</section>
