@@ -111,30 +111,6 @@
         scrub: true,
       },
     });
-
-    // Animasi Bio: Fade In saat muncul
-    gsap.from("#bio", {
-      opacity: 0,
-      duration: 1, /* Durasi fade in */
-      scrollTrigger: {
-        trigger: "#bio",
-        start: "top 80%", /* Mulai animasi saat 80% bagian Bio terlihat */
-        end: "top 20%", /* Selesai animasi saat 20% bagian Bio terlihat */
-        scrub: true,
-      },
-    });
-
-    // Animasi Bio: Fade Out saat scroll ke Body of Work
-    gsap.to("#bio", {
-      opacity: 0,
-      duration: 1, /* Durasi fade out */
-      scrollTrigger: {
-        trigger: "#body-of-work",
-        start: "top 80%", /* Mulai animasi saat 80% bagian Body of Work terlihat */
-        end: "top 20%", /* Selesai animasi saat 20% bagian Body of Work terlihat */
-        scrub: true,
-      },
-    });
   </script>
 </body>
 </html>
